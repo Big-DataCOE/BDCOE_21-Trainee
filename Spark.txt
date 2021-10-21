@@ -1,0 +1,16 @@
+Spark: 
+------
+
+In-memory computation.
+
+Spark Architecture: Libraries are installed on Spark Core which controls multiple clusters.
+
+	1.RDD: Resilient Distributed Dataset, Immutable, cannot be changed/altered. To change a new RDD needs to be made
+	2.Transformation: Change data
+	3.Actions: Store data
+
+Libraries of Spark:
+	1.Spark SQL
+	2.Spark Stream
+	3.MLLib
+	4.GraphX

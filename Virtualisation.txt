@@ -1,0 +1,8 @@
+Virtualisation
+--------------
+
+A VM provides environment that is isolated from the rest of the system.
+
+Hypervisor: Emulator/Program that creates and runs virtual machines
+	1.Type 1(bare-metal): Directly installed on hardware Eg.: KVM, Hyper-V, VMware
+ 	2.Type 2: Installed on host OS Eg.:Virtual Box
