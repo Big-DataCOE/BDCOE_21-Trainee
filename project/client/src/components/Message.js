@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import "./Message.css";
+import '../assets/Message.css';
 
-export default function Message({userName, content, pos, timestamp}) {
+export default function Message({content, userName, timestamp, pos}) {
 
     const [style, setStyle] = useState();
 
@@ -21,5 +21,5 @@ export default function Message({userName, content, pos, timestamp}) {
                 </div>
             </div>
         </div>
-    );
+    )
 }

@@ -1,0 +1,24 @@
+#chatroom{
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 9fr 1fr;
+}
+.messages{
+        overflow-y: scroll;
+}
+#chat{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-send{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.inp-send{
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid black;
+}

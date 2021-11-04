@@ -7,37 +7,47 @@ const server = http.createServer(app);
 
 const io = require("socket.io")(server, {
     cors: {
-      origin: "http://localhost:3000",
-      methods: ["GET", "POST"]
+        origin: "http://localhost:3000",
+        methods: ["GET", "POST"]
     }
 });
-const PORT = process.env.PORT || 9000;
 
-app.use(router);
+const PORT = process.env.PORT || 5000;
 
 const users = [];
 
-io.on("connection", (socket) => {
-    console.log(`message from server: new connection socket id: ${socket.id}`);
+app.use(router);
 
-    socket.on("new_user_joined", (userName)=>{
-        users[socket.id] = userName;
-        socket.broadcast.emit("user_joined", userName);
-        console.log(`message from server: ${userName} joined the chat`);
+// socket.io handling
+io.on("connection", (socket)=>{
+
+    // new user joined
+    socket.on("new_user_joined", (user)=>{
+        users[socket.id] = user;
+        socket.broadcast.emit("user_joined", user.name);
     });
 
+    // message sent
     socket.on("send", (msg)=>{
-        console.log(`${users[socket.id]} sent ${msg}`);
-        socket.emit("recieve", {message: msg, name: users[socket.id]});
+        const date = new Date();
+        const dnt = date.getDate() + '/' + (date.getMonth()+1) + '/' + date.getFullYear() + '@' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+        socket.broadcast.emit("recieve", {
+            class: "msg",
+            message: msg,
+            user: users[socket.id].name,
+            email: users[socket.id].email,
+            timestamp: dnt
+        });
     });
-    
-    socket.on("disconnect", () => {
-        console.log(`message from server: ${users[socket.id]} has diconnected`);
+
+    // user disconnected
+    socket.on("disconnect", ()=>{
         socket.broadcast.emit("user_disconnected", users[socket.id]);
         delete users[socket.id];
     });
+
 });
 
-server.listen(PORT, () => {
-    console.log(`server running on port ${PORT}`);
+server.listen(PORT, ()=>{
+    console.log(`server running at port ${PORT}`);
 });
