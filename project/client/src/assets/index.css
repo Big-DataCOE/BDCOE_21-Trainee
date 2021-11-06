@@ -12,8 +12,6 @@
 .btn{
   outline: none;
   cursor: pointer;
-  display: grid;
-  place-items: center;
   background-color: white;
 }
 .inp{

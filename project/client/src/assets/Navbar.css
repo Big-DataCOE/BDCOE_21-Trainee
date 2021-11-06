@@ -1,0 +1,44 @@
+#navbar{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px 0px grey;
+}
+.navbar-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar-logo h3{
+    pointer-events: none;
+    font-size: 22px;
+    font-weight: 700;
+    color: #7400ca;
+}
+.navbar-logo > img{
+    margin: 0 10px;
+    height: 3rem;
+    width: 3rem;
+}
+.navbar-signout{
+    display: flex;
+    align-items: center;
+}
+.btn-signout{
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px;
+    margin: 0 20px;
+    height: fit-content;
+    color: red;
+    border: 1.5px solid red;
+    transition: all 0.3s ease;
+}
+.btn-signout:hover{
+    color: white;
+    background-color: red;
+}

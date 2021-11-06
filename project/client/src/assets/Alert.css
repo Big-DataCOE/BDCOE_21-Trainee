@@ -7,9 +7,9 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 .alert-msg{
-    font-size: 14px;
-    border-radius: 20px;
-    padding: 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 5px 10px;
     background-color: rgb(49, 49, 49);
     box-shadow: 0 0 5px 2px rgb(107, 107, 107);
     color: white;

@@ -14,7 +14,7 @@ const io = require("socket.io")(server, {
 
 const PORT = process.env.PORT || 5000;
 
-const users = [];
+let users = [];
 
 app.use(router);
 
@@ -24,7 +24,7 @@ io.on("connection", (socket)=>{
     // new user joined
     socket.on("new_user_joined", (user)=>{
         users[socket.id] = user;
-        socket.broadcast.emit("user_joined", user.name);
+        socket.broadcast.emit("user_joined", user);
     });
 
     // message sent

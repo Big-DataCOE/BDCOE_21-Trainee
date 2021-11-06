@@ -4,21 +4,56 @@
     grid-template-rows: 9fr 1fr;
 }
 .messages{
-        overflow-y: scroll;
+    overflow-y: scroll;
 }
+.messages{
+    scrollbar-width: thin;
+    scrollbar-color: #7400ca #c3a2dd;
+}
+.messages::-webkit-scrollbar{
+    width: 0.7vw;
+}
+.messages::-webkit-scrollbar-thumb{
+    background-color: #7400ca;
+    border-radius: 2px;
+}
+.messages::-webkit-scrollbar-track{
+    background-color: #c3a2dd;
+}
+
+
 #chat{
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 -1px 5px 0px grey;
 }
 .btn-send{
-    border-radius: 5px;
-    border: 1px solid black;
+    display: grid;
+    place-items: center;
+    border-radius: 2px;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid #7400ca;
+    transition: all 0.2s ease;
+}
+.btn-send span{
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    color: #7400ca;
+}
+.btn-send:active{
+    transform: scale(90%);
+}
+.btn-send:hover span{
+    transform: rotate(-45deg);
 }
 .inp-send{
     padding: 5px 10px;
     font-size: 14px;
-    border-radius: 5px;
-    border: 1px solid black;
+    height: 2.5rem;
+    width: 80%;
+    max-width: 25rem;
+    border-radius: 2px;
+    border: 1px solid #7400ca;
 }

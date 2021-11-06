@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 import { auth } from '../config/firebase';
 
 import Message from './Message';
 import Alert from './Alert';
 
+import notification from '../assets/notification.mp3';
 import '../assets/Chatroom.css';
 
 const ROUTE = process.env.SERVER_ROUTE || "http://localhost:5000";
@@ -13,6 +14,8 @@ let socket;
 export default function Chatroom() {
 
     const user = auth.currentUser;
+    const audio = new Audio(notification);
+    const bottomRef = useRef(null);
     const [msgTxt, setMsgTxt] = useState('');
     const [msgList, setMsgList] = useState([]);
 
@@ -27,22 +30,22 @@ export default function Chatroom() {
 
     useEffect(() => {
         socket.on("user_joined", (user) => {
-            console.log(`user joined ${user}`);
             const date = new Date();
             const dnt = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() + '@' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
             setMsgList(msgList => [...msgList, { class: "alert", message: "joined", user: user.name, email: user.email, timestamp: dnt }]);
+            audio.play();
         });
 
         socket.on("user_disconnected", (user) => {
-            console.log(`user left ${user}`);
             const date = new Date();
             const dnt = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() + '@' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
             setMsgList(msgList => [...msgList, { class: "alert", message: "left", user: user.name, email: user.email, timestamp: dnt }]);
+            audio.play();
         });
 
         socket.on("recieve", (data) => {
-            console.log(data);
             setMsgList(msgList => [...msgList, data]);
+            audio.play();
         });
     }, []);
 
@@ -55,6 +58,12 @@ export default function Chatroom() {
         setMsgTxt('');
     }
 
+
+    useEffect(() => {
+        bottomRef.current?.scrollIntoView({ behavior: "smooth" })
+    }, [msgList]);
+       
+
     return (
         <div id="chatroom">
             <div className="messages">
@@ -66,10 +75,11 @@ export default function Chatroom() {
                         <Alert userName={m.user} message={m.message} key={i} />
                     )
                 })}
+                <div ref={bottomRef} />
             </div>
             <form id="chat" onSubmit={(e) => { e.preventDefault() }}>
                 <input className="inp inp-send" type="text" placeholder="Message" value={msgTxt} onChange={(e) => { setMsgTxt(e.target.value) }} />
-                <button className="btn btn-send" onClick={sendMsg}><span class="material-icons-round">send</span></button>
+                <button className="btn btn-send" onClick={sendMsg}><span className="material-icons-round">send</span></button>
             </form>
         </div>
     )

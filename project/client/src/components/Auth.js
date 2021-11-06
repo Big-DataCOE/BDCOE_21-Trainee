@@ -1,7 +1,8 @@
-import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
-import { auth } from "../config/firebase";
+import { GoogleAuthProvider, signInWithRedirect } from '@firebase/auth';
+import { auth } from '../config/firebase';
 
 import google from '../assets/google.svg';
+import bdcoe from '../assets/bdcoe.png';
 import '../assets/Auth.css';
 
 export default function Auth() {
@@ -14,7 +15,10 @@ export default function Auth() {
     return (
         <div id="auth">
             <div className="box">
-                <h4>Only Members of BDCoE</h4>
+                <div className="auth-logo">
+                    <img src={bdcoe} alt="logo" />
+                    <h3>BDCoE Team-Chat</h3>
+                </div>
                 <button className="btn btn-signin" onClick={signIn}><img src={google} alt="google" /> Sign in with Google</button>
             </div>
         </div>

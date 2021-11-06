@@ -1,0 +1,37 @@
+#greet{
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+.wish-name{
+    margin-right: 6vw;
+    border-radius: 2px;
+    padding: 2px 7px;
+    color: white;
+    background-color: #7400ca;
+    box-shadow: 0 0 2px 0 #7400ca;
+}
+#wish{
+    font-size: 20px;
+}
+#name{
+    font-size: 16px;
+}
+.day-date{
+    margin: 0 3vw 0 0px;
+}
+#date{
+    font-size: 18px;
+}
+#day{
+    font-size: 14px;
+}
+#time{
+    font-size: 40px;
+    margin: 0 10px;
+}
+@media screen and (max-width: 700px) {
+    #greet{
+        display: none;
+    }
+}
