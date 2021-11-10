@@ -1,0 +1,42 @@
+***BIG DATA CLASS**
+
+-----------------------------------------------------------------------
+#What is big data ?
+- Big data is the huge or big amount of data. Eg: Black Box.
+
+-----------------------------------------------------------------------
+***Types of big data***
+
+1. Structured data       eg: excel file
+2. semi-structured data  eg: powerpoint presentation
+3. unstructured data     eg: json file, XML
+
+-----------------------------------------------------------------------
+***BIG DATA TOOLS***
+
+1. Hadoop
+2. Spark
+3. Kafka
+4. Apache
+
+-----------------------------------------------------------------------
+***5 V's of big data***
+
+1. Velocity- it refers to speed at which data travels from x node to y server in a particular network.
+2. Volume- it is refered as 1Mb/s
+3. Value- data which is sent should have some value for organisation.
+4. Verasity- when data trvels in network data loss takes place.
+5. Variety- data should be of varieties and gernes.
+
+-----------------------------------------------------------------------
+#What is data analytics?
+
+Data Analytics refers to making out useful information from raw data.
+and also to decrypt data.
+-
+Mainly there three ways to do the above-
+1. Collect 
+2. Sort 
+3. Making out inference
+
+------------------------------------------------------------------------

@@ -1,0 +1,19 @@
+Spark: 
+-------------------------------------------------------------------------------------------
+Apache Spark is an open-source unified analytics engine for large-scale data processing.
+In-memory computation.
+-------------------------------------------------------------------------------------------
+Spark Architecture: Apache Spark has a well-defined layered architecture where all the spark components and layers are loosely coupled. 
+                    This architecture is further integrated with various extensions and libraries.
+                    Libraries are installed on Spark Core which controls multiple clusters.
+
+-> Apache Spark Architecture is based on two main abstractions: Resilient Distributed Dataset (RDD)
+        1.RDD: Resilient Distributed Dataset, Immutable, cannot be changed/altered. To change a new RDD needs to be made
+	2.Transformation: Change data
+	3.Actions: Store data
+
+Libraries of Spark:
+	1.Spark SQL
+	2.Spark Stream
+	3.MLLib
+	4.GraphX

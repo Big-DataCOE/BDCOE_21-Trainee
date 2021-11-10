@@ -1,0 +1,45 @@
+Hadoop: it's a Big Data tool.Hadoop is an open source, Java-based programming framework that supports 
+the storage and processing of extremely large data sets in a distributed computing environment. 
+
+------------------------------------------------------------------------------------------------------
+The Hadoop components, that together form a Hadoop ecosystem;
+HDFS -> Hadoop Distributed File System
+YARN -> Yet Another Resource Negotiator
+MapReduce -> Data processing using programming
+Spark -> In-memory Data Processing
+
+-------------------------------------------------------------------------------------------------------
+Hadoop Architecture:
+	1.Map Reduce
+	2.HDFS: Hadoop Distributed File System.
+	3.YARN Framework
+	4.Common Utilities
+
+-----------------------------------------------------------------------------------------------------------------
+Hadoop Core Components:
+      One is HDFS (storage) and the other is YARN (processing). HDFS stands for Hadoop Distributed File System,
+      which is a scalable storage unit of Hadoop whereas YARN is used to process the data i.e. stored in the HDFS 
+      in a distributed and parallel fashion.
+
+-----------------------------------------------------------------------------------------------------------------
+Advantages of Hadoop:
+1. Scalable
+2. Cost-effective
+3. Flexible4. Fast
+5. Resiliant to failure
+
+-----------------------------------------------------------------------------------------------------------------
+Disadvantages of Hadoop:
+1. Problem with Small files
+2. Vulnerability
+3. Low Performance In Small Data Surrounding
+4. Lack of Security
+5. High Up Processing
+6. Supports Only Batch Processing
+
+-----------------------------------------------------------------------------------------------------------------
+Hadoop ecosystem 
+comprises of several components:
+-Apache Pig
+-Apache Hive
+-Apache Spark

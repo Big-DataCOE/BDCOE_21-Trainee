@@ -1,0 +1,13 @@
+<<Virtualisation>>
+
+A VM provides environment that is isolated from the rest of the system. 
+-----------------------------------------------------------------------
+there are two types:-
+
+1. Hardware -> (installed on hardware i.e. hypermaster) more secure
+2. OS->  (installed on os) less secure
+---------------------------------------------------------------------
+Hypervisor-A hypervisoris a kind of emulator; it is computer software,
+firmware or hardware that creates and runs virtual machines. A computer 
+on which a hypervisor runs one or more virtual machines is called a host 
+machine, and each virtual machine is called a guest machine.

@@ -1,0 +1,53 @@
+**GIT**
+--------------------------------------------------------------------------------------------------------------------------------
+# Project in git is called repository or repo
+# staging controls what to commits 
+# main branch is master branch
+# to save anything use commit
+# folder is called working directoy 
+# workingTree --> stagingArea --> commit
+
+$git --version                           //First Command                   (to check proper intallation of git)
+
+$git config -l                                                             (GIT Configuration)
+$git config --global user.name "username"                                  (configurtion details)
+$git config --global user.email "emailID"
+
+$git init                               //current directory                (to Initialise Repository)   
+
+touch fileanme.extension                                                   (to create a file)
+
+$git status                                                                (to check STATUS)
+
+**STAGING AREA**
+
+    ##to add files to staging area
+
+    $git add .                                                             (all files in the working directoy)
+    $git add fileanme.extension                                            (particular file)
+
+    ##to remove files from staging area
+
+    $git rm filename.extension                                             (remove and delete file)
+    $git rm --cached filename.extension                                    (remove only)
+
+**COMMIT**
+
+$git commit -m 'commit message'                                            (to commit changes)
+$git commit -a -m 'commit message'                                         (to commit without staging)
+$git commit --amend                                                        (to add to last commit without generating new commit)
+
+**REMOTE REPOSITORY**
+
+$git remote add origin			                                           (to connect remote repo to loacal repo)
+$git push -u origin master	                                               (to push to remote branch)
+$git clone url					                                           (to clone repo to machine)
+
+**Branch**
+
+$git branch newBranchName			                                       (create a new branch)
+$git checkout newBranchName		                                           (checkout to new branch)
+$git checkout -b newBranchName			                                   (create and checkout to new branch)
+
+$git merge newBranchName				                                   (merge current branch with new branch)
+---------------------------------------------------------------------------------------------------------------------------------
