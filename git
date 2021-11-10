@@ -1,0 +1,63 @@
+//Git
+
+We can write git commands either in
+ git bash ( use $ sign)
+Or in command prompt
+working Tree--->staging area--->commit
+
+---------------------------------------------------------------------------------------------------------------
+1. Configuration
+
+git config --global user.name Anshika
+git config --global user.email jbcas@.com
+git config --global user.email                                 (to check)
+git config --global user.name                                  (to check)
+
+---------------------------------------------------------------------------------------------------------------
+
+Code .                                                         (to connect to vsc)
+
+
+---------------------------------------------------------------------------------------------------------------
+
+2. Initialise Repository
+
+git init
+ls -lart                                                        (what all files are their file )
+git status                                                      (to check the status)
+git add file.extension                                          (adding file to working directory)
+git add.                                                        (to add all files in the working directory)
+
+--------------------------------------------------------------------------------------------------------------
+
+3. Commit
+
+git commit
+i Initial commit escape : wq                                    (give message of initial commit)
+git add -A                                                      (to add all files to staging area)
+git commit -m “skksnoc”                                         (all files committed)
+clear                                                           ( to clear terminal)
+
+---------------------------------------------------------------------------------------------------------------
+
+
+4. Check
+
+git checkout file.exe                                            (to check last modified file)
+git checkout -f  
+git diff                                                         (compare working area with staging area….also to see changes)
+git diff --stage                                                 (compare staging area to the last commit)
+git rm --cached some.html                                        (to delete from staging area)
+ ls                                                              (list of working directories)
+git log -p -2                                                    (to check your last 2 commits)
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+5. Branch
+
+
+Git branch NewBranchName                                         (new branch created)
+Git checkout NewBranchName                                       (switched branch to NewBranchName)
+Git merge NewBranchName                                          (merged with master branch)
+Git branch                                                       (to check working branch)
+
