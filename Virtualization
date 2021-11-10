@@ -9,13 +9,13 @@ Type 1:
 Installed directly on top of the physical server.
 Most frequently used.
 Most secure.
-eg.VMware vSphere, KVM
+eg.VMware ESXi vSphere, KVM
 
 Type 2:
 A layer of host between the physical server and the hypervisor.
 Less frequent.
 Mostly used end-user virtualization.
-Eg. Oracle, virtual box
+Eg. Oracle, virtual box, VMware Workstation.
 
 
 Once the hypervisor is installed we can set up virtual machines.
