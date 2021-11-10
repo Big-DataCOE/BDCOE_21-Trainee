@@ -1,0 +1,33 @@
+//Virtualization
+
+Virtualization is creating a virtual base of something that can be of network, server, application anything.
+There are hypervisors that basically pull the resources from the physical server and compute them to our virtual environment.
+
+Two types of Hypervisors:
+
+Type 1:
+Installed directly on top of the physical server.
+Most frequently used.
+Most secure.
+eg.VMware vSphere, KVM
+
+Type 2:
+A layer of host between the physical server and the hypervisor.
+Less frequent.
+Mostly used end-user virtualization.
+Eg. Oracle, virtual box
+
+
+Once the hypervisor is installed we can set up virtual machines.
+A VM is simply a software-based computer, it runs like a simple computer, they have os and application and they are completely independent of one another.
+You can run multiple of VM on a hypervisor.
+
+A hypervisor manages the resources that are allocated to these VM from the physical server.
+As they are independent we can run different software on different virtual machines.
+We can move one virtual machine from one hypervisor to another hypervisor on a different machine.
+
+Benefits:
+Cost savings
+Lowers downtime
+Sustainability
+
