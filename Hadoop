@@ -1,0 +1,39 @@
+//Hadoop
+
+
+The Internet gave rise to a tone of semistructured and unstructured data in the form of video, emails, images, etc. This data is known as big data, which was very difficult to handle by previous techniques.
+
+Here came Hadoop.
+Hadoop is an open-source software framework used for storing and processing Big Data in a distributed manner on large clusters of commodity hardware. 
+Hadoop provides massive storage for any kind of data, enormous processing power, and the ability to handle virtually limitless concurrent tasks or jobs.
+
+
+ARCHITECTURE
+
+1. Storing unit - HDFS(Hadoop Distributed File System)
+
+Data is distributed among many computers and stored in blocks.
+Because of the replication method even if one node fails the data is not lost .
+
+2. Processing - mapReduce process
+
+MapReduce splits the data into parts and process each data separately.
+This improves load balancing and saves a considerable amount of time.
+
+3. YARN(Yet Another Resource Negotiator)
+
+Processes job requests and manage cluster resources.
+MASTER------>Node manager------->Resource manager
+
+Advantages
+-Economical
+-Scalable
+-Reliable
+-Flexible
+
+Hadoop ecosystem 
+comprises of several components:
+-Apache Pig
+-Apache Hive
+-Apache Spark
+
