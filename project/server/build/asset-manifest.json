@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.63b96af0.chunk.css",
+    "main.js": "/static/js/main.2d13f164.chunk.js",
+    "main.js.map": "/static/js/main.2d13f164.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.71c5bbf3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.71c5bbf3.js.map",
+    "static/js/2.9704c162.chunk.js": "/static/js/2.9704c162.chunk.js",
+    "static/js/2.9704c162.chunk.js.map": "/static/js/2.9704c162.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.63b96af0.chunk.css.map": "/static/css/main.63b96af0.chunk.css.map",
+    "static/js/2.9704c162.chunk.js.LICENSE.txt": "/static/js/2.9704c162.chunk.js.LICENSE.txt",
+    "static/media/bdcoe.8b355dae.jfif": "/static/media/bdcoe.8b355dae.jfif",
+    "static/media/bdcoe.a4c33c9b.png": "/static/media/bdcoe.a4c33c9b.png",
+    "static/media/Chatroom.css": "/static/media/chatbg.305ebaa7.svg",
+    "static/media/google.ea717441.svg": "/static/media/google.ea717441.svg",
+    "static/media/notification.1e61b3a0.mp3": "/static/media/notification.1e61b3a0.mp3",
+    "static/media/Pinup.css": "/static/media/pinupbg.20d78a39.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.71c5bbf3.js",
+    "static/js/2.9704c162.chunk.js",
+    "static/css/main.63b96af0.chunk.css",
+    "static/js/main.2d13f164.chunk.js"
+  ]
+}

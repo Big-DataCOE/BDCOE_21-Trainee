@@ -16,6 +16,7 @@
 }
 .inp{
   outline: none;
-  display: grid;
-  place-items: center;
+}
+.material-icons-round{
+  pointer-events: none;
 }

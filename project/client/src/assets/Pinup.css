@@ -1,0 +1,146 @@
+#pinup{
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr 8fr 1fr;
+    height: 90vh;
+    background: url('../assets/pinupbg.svg');
+    position: relative;
+    overflow: hidden;
+}
+#pinup > h2{
+    margin: 10px 0 5px 0;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #ff6d00;
+    color: white;
+}
+
+#tasks{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+#tasks::-webkit-scrollbar{
+    width: 0.7vw;
+}
+#tasks::-webkit-scrollbar-thumb{
+    background-color: #ff6d00;
+    border-radius: 2px;
+}
+#tasks::-webkit-scrollbar-track{
+    background-color: #fcc296;
+}
+
+#btn-plus{
+    display: grid;
+    place-items: center;
+    background-color: #ff6d00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 2.5rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    box-shadow: 0 0 2px 1px grey;
+    transition: all 0.3s ease;
+}
+#btn-plus > span{
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+#btn-plus:active{
+    transform: scale(90%);
+    box-shadow: 0 0 2px 1px grey inset;
+}
+#btn-plus:hover > span{
+    transform: rotate(90deg);
+}
+
+#add-task{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.6);
+}
+#add-task button{
+    display: grid;
+    place-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.inp-title{
+    font-size: 1rem;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #ff6d00;
+}
+.inp-desc{
+    font-size: 1rem;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #ff6d00;
+}
+#inp-date{
+    border: 2px solid #ff6d00;
+    font-size: 1rem;
+    padding: 5px;
+    margin: 5px;
+    width: 60%;
+}
+#inp-date-label{
+    font-size: 1rem;
+    margin: 5px 5px 0 5px;
+}
+
+
+#btn-addtask{
+    border: 2px solid #ff6d00;
+    border-radius: 5px;
+    background-color: white;
+    color: #ff6d00;
+    margin: 5px;
+    align-self: center;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    transition: all 0.2s ease;
+}
+#btn-addtask:hover{
+    background-color: #ff6d00;
+    color: white;
+    transform: scale(90%);
+}
+#btn-addtask > span{
+    font-size: 2rem;
+}
+
+
+#float-cross{
+    position: absolute;
+    top: -3rem;
+    right: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    background-color: #ff6d00;
+    color: white;
+    box-shadow: 0 0 5px 0 grey;
+    transition: all 0.2s ease;
+}
+#float-cross:hover{
+    transform: scale(90%);
+}
+#float-cross > span{
+    position: absolute;
+    font-size: 2rem;
+}

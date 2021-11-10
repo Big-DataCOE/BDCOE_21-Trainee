@@ -5,6 +5,7 @@
 }
 .messages{
     overflow-y: scroll;
+    background: url('../assets/chatbg.svg');
 }
 .messages{
     scrollbar-width: thin;

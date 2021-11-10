@@ -1,0 +1,14 @@
+#dashboard{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 9fr;
+}
+@media screen and (max-width: 700px) {
+    #dashboard{
+        grid-template-rows: 1fr 9fr 10fr;
+        grid-template-columns: 1fr;
+    }
+    #pinup{
+        display: none;
+    }
+}

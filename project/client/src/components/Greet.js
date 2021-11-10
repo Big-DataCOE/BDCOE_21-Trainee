@@ -25,7 +25,7 @@ export default function Greet() {
     return (
         <div id="greet">
             <div className="wish-name">
-                <div id="wish">{wish},</div>
+                <div id="wish">{wish}</div>
                 <div id="name">{auth.currentUser.displayName.replace(/ .*/, '')}</div>
             </div>
             <div id="time">{time}</div>

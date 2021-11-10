@@ -8,7 +8,7 @@ import Alert from './Alert';
 import notification from '../assets/notification.mp3';
 import '../assets/Chatroom.css';
 
-const ROUTE = process.env.SERVER_ROUTE || "http://localhost:5000";
+const ROUTE = process.env.SERVER_ROUTE;
 let socket;
 
 export default function Chatroom() {
