@@ -6,7 +6,7 @@ import Task from './Task';
 
 import '../assets/Pinup.css';
 
-export default function Pinup() {
+export default function Pinup({pinDisplay}) {
 
     const user = auth.currentUser.displayName;
     const [title, setTitle] = useState("");
@@ -77,7 +77,7 @@ export default function Pinup() {
     }
 
     return (
-        <div id="pinup">
+        <div id="pinup" style={{display: pinDisplay}} >
             <h2>List of tasks</h2>
 
             <div id="tasks">

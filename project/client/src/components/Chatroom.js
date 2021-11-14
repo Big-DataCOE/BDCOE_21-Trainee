@@ -79,7 +79,7 @@ export default function Chatroom() {
             </div>
             <form id="chat" onSubmit={(e) => { e.preventDefault() }}>
                 <input className="inp inp-send" type="text" placeholder="Message" value={msgTxt} onChange={(e) => { setMsgTxt(e.target.value) }} />
-                <button className="btn btn-send" onClick={sendMsg}><span className="material-icons-round">send</span></button>
+                <button className="btn" id="btn-send" onClick={sendMsg}><span className="material-icons-round">send</span></button>
             </form>
         </div>
     )

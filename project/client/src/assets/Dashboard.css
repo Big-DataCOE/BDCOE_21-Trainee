@@ -3,12 +3,32 @@
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 9fr;
 }
+#btn-show-pinup{
+    display: none;
+}
 @media screen and (max-width: 700px) {
     #dashboard{
-        grid-template-rows: 1fr 9fr 10fr;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
     #pinup{
-        display: none;
+        position: absolute;
+        height: 84vh;
+        width: 90vw;
+        bottom: 5%;
+        left: 5%;
+        background: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 15px 0px 20px rgba(255, 255, 255, 0.7);
+    }
+    #btn-show-pinup{
+        display: block;
+        position: absolute;
+        top: 2.5%;
+        right: 31%;
+        background: #ff6d00;
+        border: none;
+        border-radius: 2px;
+        color: white;
+        padding: 1px 2px;
     }
 }

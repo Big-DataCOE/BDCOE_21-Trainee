@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { doc, deleteDoc, setDoc } from "firebase/firestore";
-import { db } from '../config/firebase';
+import { db, auth } from '../config/firebase';
 
 import '../assets/Task.css';
 
 export default function Task({ id, author, completed, created, description, due, modified, title }) {
 
+    const user = auth.currentUser.displayName;
     const [rotate, setRotate] = useState("material-icons-round rotate");
     const [display, setDisplay] = useState("task-desc display-none");
     const [status, setStatus] = useState(completed);
@@ -31,6 +32,8 @@ export default function Task({ id, author, completed, created, description, due,
             setDoc(taskRef, { completed: true }, { merge: true });
             setStatus(true);
         }
+        const taskRef = doc(db, "user", id);
+        setDoc(taskRef, { modified: user }, { merge: true });
     }
 
     async function deleteTask() {

@@ -29,24 +29,25 @@
     justify-content: center;
     box-shadow: 0 -1px 5px 0px grey;
 }
-.btn-send{
+#btn-send{
     display: grid;
     place-items: center;
     border-radius: 2px;
     height: 2.5rem;
     width: 2.5rem;
-    border: 1px solid #7400ca;
+    border: none;
+    background-color: #7400ca;
     transition: all 0.2s ease;
 }
-.btn-send span{
+#btn-send span{
     font-size: 2rem;
     transition: all 0.3s ease;
-    color: #7400ca;
+    color: white;
 }
-.btn-send:active{
+#btn-send:active{
     transform: scale(90%);
 }
-.btn-send:hover span{
+#btn-send:hover span{
     transform: rotate(-45deg);
 }
 .inp-send{
@@ -56,5 +57,5 @@
     width: 80%;
     max-width: 25rem;
     border-radius: 2px;
-    border: 1px solid #7400ca;
+    border: 2px solid #7400ca;
 }

@@ -42,6 +42,7 @@
 .task-title{
     padding: 0 5px;
     pointer-events: none;
+    word-wrap: break-word;
 }
 #check-task{
     border-radius: 50%;
